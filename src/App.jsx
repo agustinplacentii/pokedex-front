@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { usePokemons } from "./hooks/usePokemons";
 
-import Header from "./components/Header";
+import Header from "./components/Header/header";
 import PokemonGrid from "./components/PokemonGrid";
 import Loading from "./components/Loading";
 import ErrorState from "./components/ErrorState";
