@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* 🟡 logo */
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+/* 📟 contenedor pokedex */
+.pokedex-container {
+    position: relative;
+    width: 220px;
+    /* ajusta según tu imagen */
+}
+
+/* 🖼️ imagen pokedex */
+.pokedex-img {
+    width: 100%;
+    display: block;
+}
+
+/* 🔍 input dentro de la pantalla */
+.pokedex-input {
+    text-shadow: 0 0 5px #00ff00;
+    position: absolute;
+    top: 45%;
+    /* ajusta según la imagen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+    color: #00ff00;
+}
+
+/* placeholder estilo retro */
+.pokedex-input::placeholder {
+    color: rgba(0, 255, 0, 0.5);
+}
+
+.pokedex-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
